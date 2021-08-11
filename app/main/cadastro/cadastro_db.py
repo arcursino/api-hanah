@@ -1,19 +1,19 @@
-class PessoaDb:
+class CadastroDb:
     items = [
         {
             'id': 1,
             'nome': 'Jozimar Back',
-            'endereco': 'Brasil'
+            'cpf': '04353788051'
         },
         {
             'id': 2,
             'nome': 'Maria Antonieta',
-            'endereco': 'Brasil'
+            'cpf': '79463515003'
         },
         {
             'id': 3,
             'nome': 'Rebecca Braz',
-            'endereco': 'Brasil'
+            'cpf': '15889975021'
         }
     ]
 
@@ -39,8 +39,8 @@ class PessoaDb:
         if novo_item.get('nome'):
             item['nome'] = novo_item.get('nome')
 
-        if novo_item.get('endereco'):
-            item['endereco'] = novo_item.get('endereco')
+        if novo_item.get('cpf'):
+            item['cpf'] = novo_item.get('cpf')
 
         cls.items[index] = item
         return item

@@ -1,5 +1,6 @@
-# flask-experiments
-Experimentos com flask
+# API - HanaH
 
-
-todo: alterar versão Werkzeug==0.16.1
+```
+> pip install -r requirements.txt
+> python run.py
+```
