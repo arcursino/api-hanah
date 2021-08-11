@@ -1,0 +1,6 @@
+# API - HanaH
+
+```
+> pip install -r requirements.txt
+> python run.py
+```
