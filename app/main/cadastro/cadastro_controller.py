@@ -6,7 +6,8 @@ api = Namespace('Cadastro',description='Manutenção dados de cadastro')
 modelo = api.model('CadastroModel', {
     'id': fields.Integer,
     'nome': fields.String,
-    'cpf': fields.String
+    'cpf': fields.String,
+    'endereco': fields.String
 })
 @api.route('/')
 class CadastroController(Resource):
@@ -25,7 +26,8 @@ class CadastroIdController(Resource):
 
     @api.response(200, "Busca realizada com sucesso")
     @api.param('nome','Nome da cadastro')
-    @api.param('cpf','Endereço da cadastro')
+    @api.param('cpf','CPF de cadastro')
+    @api.param('endereco','Endereço da cadastro')
     def put(self, id:int):
         return CadastroDb.alterar(int(id), request.json), 201
 

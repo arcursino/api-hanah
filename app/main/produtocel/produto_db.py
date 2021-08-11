@@ -1,22 +1,26 @@
-class CadastroDb:
+class ProdutoDbcel:
     items = [
         {
             'id': 1,
-            'nome': 'Jozimar Back',
-            'cpf': '04353788051',
-            'endereço:':'Brasil'
+            'nome': 'Samsung j7',
+            'processador': 'quadcore',
+            'armazenamento':'64Gb',
+            'preço': 800
         },
         {
             'id': 2,
-            'nome': 'Maria Antonieta',
-            'cpf': '79463515003',
-            'endereço:':'Brasil'
+            'nome': 'Iphone 6s',
+            'processador': 'iOs',
+            'armazenamento':'128Gb',
+            'preço':1.200
+
         },
         {
             'id': 3,
-            'nome': 'Rebecca Braz',
-            'cpf': '15889975021',
-            'endereço:':'Brasil'
+            'nome': 'Iphone 10',
+            'processador': 'iOs',
+            'armazenamento':'128Gb',
+            'preço': 5.000
         }
     ]
 
@@ -42,11 +46,13 @@ class CadastroDb:
         if novo_item.get('nome'):
             item['nome'] = novo_item.get('nome')
 
-        if novo_item.get('cpf'):
-            item['cpf'] = novo_item.get('cpf')
+        if novo_item.get('processador'):
+            item['processador'] = novo_item.get('processador')
 
-        if novo_item.get('endereço'):
-            item['endereço'] = novo_item.get('endereço')
+        if novo_item.get('armazenamento'):
+            item['armazenamento'] = novo_item.get('armazenamento')
 
         cls.items[index] = item
         return item
+
+

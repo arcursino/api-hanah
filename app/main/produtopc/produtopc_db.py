@@ -1,26 +1,25 @@
-class produtoSmartfoneDb:
+class ProdutoDbpc:
     items = [
         {
             'id': 1,
-            'nome': 'Samsung j7',
-            'processador': 'quadcore',
-            'armazenamento':'64Gb',
-            'preço':'800,00R$'
+            'nome': 'Samsung',
+            'processador': 'intel 3',
+            'armazenamento':'120Gb',
+            'preço': 1.000
         },
         {
             'id': 2,
-            'nome': 'Iphone 6s',
-            'processador': 'iOs',
-            'armazenamento':'128Gb',
-            'preço':'1.200,00R$'
-
+            'nome': 'Lenovo',
+            'processador': 'intel 5',
+            'armazenamento':'500gb',
+            'preço': 2.500
         },
         {
             'id': 3,
-            'nome': 'Iphone 10',
-            'processador': 'iOs',
-            'armazenamento':'128Gb',
-            'preço':'5.000,00R$'
+            'nome': 'Macbook',
+            'processador': 'intel 8',
+            'armazenamento':'1Tb',
+            'preço': 5.000
         }
     ]
 
@@ -51,8 +50,9 @@ class produtoSmartfoneDb:
 
         if novo_item.get('armazenamento'):
             item['armazenamento'] = novo_item.get('armazenamento')
+        if  novo_item.get('armazenamento'):
+
+            item['preço'] = novo_item.get('preço')   
 
         cls.items[index] = item
         return item
-
-

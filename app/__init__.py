@@ -3,6 +3,8 @@ from flask_restplus import Api
 from werkzeug.middleware.proxy_fix import ProxyFix
 
 from app.main.cadastro.cadastro_controller import api as home_ns
+from app.main.produtocel.produto_controller import api as cel_ns
+from app.main.produtopc.produtopc_controller import api as pc_ns
 
 app = Flask(__name__)
 app.wsgi_app = ProxyFix(app.wsgi_app)
@@ -21,3 +23,5 @@ api = Api(app, title='Api Flask HanaH', version='1.0', description='Api de exper
 
 
 api.add_namespace(home_ns, path='/cadastro')
+api.add_namespace(cel_ns, path='/celular')
+api.add_namespace(pc_ns, path='/pc')
