@@ -3,7 +3,7 @@ from flask import request
 from app.main.cadastro.cadastro_db import CadastroDb
 
 api = Namespace('Cadastro',description='Manutenção dados de cadastro')
-modelo = api.model('CadastroModel', {
+modelo = api.model('UsuarioModel', {
     'id': fields.Integer,
     'nome': fields.String,
     'cpf': fields.String,

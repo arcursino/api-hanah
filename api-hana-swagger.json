@@ -1,0 +1,575 @@
+{
+    "swagger": "2.0",
+    "basePath": "\/api",
+    "paths": {
+        "\/cadastro\/": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Busca realizada com sucesso"
+                    }
+                },
+                "operationId": "get_cadastro_controller",
+                "tags": [
+                    "Cadastro"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "post_cadastro_controller",
+                "parameters": [
+                    {
+                        "name": "payload",
+                        "required": true,
+                        "in": "body",
+                        "schema": {
+                            "$ref": "#\/definitions\/UsuarioModel"
+                        }
+                    }
+                ],
+                "tags": [
+                    "Cadastro"
+                ]
+            }
+        },
+        "\/cadastro\/{id}": {
+            "parameters": [
+                {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ],
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Busca realizada com sucesso"
+                    }
+                },
+                "operationId": "get_cadastro_id_controller",
+                "tags": [
+                    "Cadastro"
+                ]
+            },
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Busca realizada com sucesso"
+                    }
+                },
+                "operationId": "put_cadastro_id_controller",
+                "parameters": [
+                    {
+                        "in": "query",
+                        "description": "Endere\u00e7o da cadastro",
+                        "name": "endereco",
+                        "type": "string"
+                    },
+                    {
+                        "in": "query",
+                        "description": "CPF de cadastro",
+                        "name": "cpf",
+                        "type": "string"
+                    },
+                    {
+                        "in": "query",
+                        "description": "Nome da cadastro",
+                        "name": "nome",
+                        "type": "string"
+                    }
+                ],
+                "tags": [
+                    "Cadastro"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "delete_cadastro_id_controller",
+                "tags": [
+                    "Cadastro"
+                ]
+            }
+        },
+        "\/celular\/": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Busca realizada com sucesso"
+                    }
+                },
+                "operationId": "get_produto_controller",
+                "tags": [
+                    "Celular"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "post_produto_controller",
+                "parameters": [
+                    {
+                        "name": "payload",
+                        "required": true,
+                        "in": "body",
+                        "schema": {
+                            "$ref": "#\/definitions\/CelularModel"
+                        }
+                    }
+                ],
+                "tags": [
+                    "Celular"
+                ]
+            }
+        },
+        "\/celular\/{armazenamento}": {
+            "parameters": [
+                {
+                    "name": "armazenamento",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ],
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Busca realizada com sucesso"
+                    }
+                },
+                "operationId": "get_produto_id_controller",
+                "tags": [
+                    "Celular"
+                ]
+            },
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Busca realizada com sucesso"
+                    }
+                },
+                "operationId": "put_produto_id_controller",
+                "parameters": [
+                    {
+                        "name": "armazenamento",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": "Armazenamento do Produto"
+                    }
+                ],
+                "tags": [
+                    "Celular"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "delete_produto_id_controller",
+                "tags": [
+                    "Celular"
+                ]
+            }
+        },
+        "\/celular\/{id}": {
+            "parameters": [
+                {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ],
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Busca realizada com sucesso"
+                    }
+                },
+                "operationId": "get_produto_id_controller",
+                "tags": [
+                    "Celular"
+                ]
+            },
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Busca realizada com sucesso"
+                    }
+                },
+                "operationId": "put_produto_id_controller",
+                "parameters": [
+                    {
+                        "in": "query",
+                        "description": "Nome da cadastro",
+                        "name": "nome",
+                        "type": "string"
+                    }
+                ],
+                "tags": [
+                    "Celular"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "delete_produto_id_controller",
+                "tags": [
+                    "Celular"
+                ]
+            }
+        },
+        "\/celular\/{preco}": {
+            "parameters": [
+                {
+                    "name": "preco",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ],
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Busca realizada com sucesso"
+                    }
+                },
+                "operationId": "get_produto_id_controller",
+                "tags": [
+                    "Celular"
+                ]
+            },
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Busca realizada com sucesso"
+                    }
+                },
+                "operationId": "put_produto_id_controller",
+                "parameters": [
+                    {
+                        "name": "preco",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": "Pre\u00e7o do Produto"
+                    }
+                ],
+                "tags": [
+                    "Celular"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "delete_produto_id_controller",
+                "tags": [
+                    "Celular"
+                ]
+            }
+        },
+        "\/pc\/": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Busca realizada com sucesso"
+                    }
+                },
+                "operationId": "get_produto_controller",
+                "tags": [
+                    "Computadores"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "post_produto_controller",
+                "parameters": [
+                    {
+                        "name": "payload",
+                        "required": true,
+                        "in": "body",
+                        "schema": {
+                            "$ref": "#\/definitions\/PcModel"
+                        }
+                    }
+                ],
+                "tags": [
+                    "Computadores"
+                ]
+            }
+        },
+        "\/pc\/{armazenamento}": {
+            "parameters": [
+                {
+                    "name": "armazenamento",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ],
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Busca realizada com sucesso"
+                    }
+                },
+                "operationId": "get_produto_id_controller",
+                "tags": [
+                    "Computadores"
+                ]
+            },
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Busca realizada com sucesso"
+                    }
+                },
+                "operationId": "put_produto_id_controller",
+                "parameters": [
+                    {
+                        "name": "armazenamento",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": "Armazenamento do Produto"
+                    }
+                ],
+                "tags": [
+                    "Computadores"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "delete_produto_id_controller",
+                "tags": [
+                    "Computadores"
+                ]
+            }
+        },
+        "\/pc\/{id}": {
+            "parameters": [
+                {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ],
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Busca realizada com sucesso"
+                    }
+                },
+                "operationId": "get_produto_id_controller",
+                "tags": [
+                    "Computadores"
+                ]
+            },
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Busca realizada com sucesso"
+                    }
+                },
+                "operationId": "put_produto_id_controller",
+                "parameters": [
+                    {
+                        "in": "query",
+                        "description": "Nome da cadastro",
+                        "name": "nome",
+                        "type": "string"
+                    }
+                ],
+                "tags": [
+                    "Computadores"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "delete_produto_id_controller",
+                "tags": [
+                    "Computadores"
+                ]
+            }
+        },
+        "\/pc\/{preco}": {
+            "parameters": [
+                {
+                    "name": "preco",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ],
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Busca realizada com sucesso"
+                    }
+                },
+                "operationId": "get_produto_id_controller",
+                "tags": [
+                    "Computadores"
+                ]
+            },
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Busca realizada com sucesso"
+                    }
+                },
+                "operationId": "put_produto_id_controller",
+                "parameters": [
+                    {
+                        "name": "preco",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": "Pre\u00e7o do Produto"
+                    }
+                ],
+                "tags": [
+                    "Computadores"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "delete_produto_id_controller",
+                "tags": [
+                    "Computadores"
+                ]
+            }
+        }
+    },
+    "info": {
+        "title": "Api Flask HanaH",
+        "version": "1.0",
+        "description": "Api de experimentos com python flask"
+    },
+    "produces": [
+        "application\/json"
+    ],
+    "consumes": [
+        "application\/json"
+    ],
+    "securityDefinitions": {
+        "bearer": {
+            "name": "Authorization",
+            "in": "header",
+            "type": "apiKey",
+            "description": "Insira o seu Token JWT aqui!"
+        }
+    },
+    "tags": [
+        {
+            "name": "Cadastro",
+            "description": "Manuten\u00e7\u00e3o dados de cadastro"
+        },
+        {
+            "name": "Celular",
+            "description": "Descri\u00e7\u00e3o de Celulares"
+        },
+        {
+            "name": "Computadores",
+            "description": "Descri\u00e7\u00e3o de Computadores"
+        }
+    ],
+    "definitions": {
+        "UsuarioModel": {
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "nome": {
+                    "type": "string"
+                },
+                "cpf": {
+                    "type": "string"
+                },
+                "endereco": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "CelularModel": {
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "nome": {
+                    "type": "string"
+                },
+                "armazenamento": {
+                    "type": "string"
+                },
+                "pre\u00e7o": {
+                    "type": "integer"
+                }
+            },
+            "type": "object"
+        },
+        "PcModel": {
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "nome": {
+                    "type": "string"
+                },
+                "armazenamento": {
+                    "type": "string"
+                },
+                "preco": {
+                    "type": "integer"
+                }
+            },
+            "type": "object"
+        }
+    },
+    "responses": {
+        "ParseError": {
+            "description": "When a mask can't be parsed"
+        },
+        "MaskError": {
+            "description": "When any error occurs on mask"
+        }
+    }
+}

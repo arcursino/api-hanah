@@ -3,7 +3,7 @@ from flask import request
 from app.main.produtopc.produtopc_db import ProdutoDbpc
 
 api = Namespace('Computadores',description='Descrição de Computadores')
-modelo = api.model('CadastroModel', {
+modelo = api.model('PcModel', {
     'id': fields.Integer,
     'nome': fields.String,
     'armazenamento': fields.String,
